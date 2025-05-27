@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tic Tac Toe Game</title>
+</head>
+<body class="min-h-screen flex items-center justify-center" style="background-color:#A7CCED;">
+    <div id="container" class="w-[375px] gap-y-2 border-2 rounded bg-gray-300 shadow-lg flex flex-col items-center ">
+        <p id="msg" class="hidden mt-2 text-xl font-semibold font-serif"></p>
+        <h1 class="text-black font-bold text-2xl font-serif">Tic-Tac-Toe </h1>
+        <div class="grid grid-cols-3 gap-2 m-2 ">
+            <button class="box w-20 h-20 border-2 rounded-md flex items-center justify-center border bg-gray-50 text-4xl cursor-pointer transition-transform transform active:scale-90 transition-colors duration-100 ease-in-out"></button>
+            <button class="box w-20 h-20 border-2 rounded-md flex items-center justify-center border bg-gray-50 text-4xl cursor-pointer transition-transform transform active:scale-90 transition-colors duration-100 ease-in-out"></button>
+            <button class="box w-20 h-20 border-2 rounded-md flex items-center justify-center border bg-gray-50 text-4xl cursor-pointer transition-transform transform active:scale-90 transition-colors duration-100 ease-in-out"></button>
+            <button class="box w-20 h-20 border-2 rounded-md flex items-center justify-center border bg-gray-50 text-4xl cursor-pointer transition-transform transform active:scale-90 transition-colors duration-100 ease-in-out"></button>
+            <button class="box w-20 h-20 border-2 rounded-md flex items-center justify-center border bg-gray-50 text-4xl cursor-pointer transition-transform transform active:scale-90 transition-colors duration-100 ease-in-out"></button>
+            <button class="box w-20 h-20 border-2 rounded-md flex items-center justify-center border bg-gray-50 text-4xl cursor-pointer transition-transform transform active:scale-90 transition-colors duration-100 ease-in-out"></button>
+            <button class="box w-20 h-20 border-2 rounded-md flex items-center justify-center border bg-gray-50 text-4xl cursor-pointer transition-transform transform active:scale-90 transition-colors duration-100 ease-in-out"></button>
+            <button class="box w-20 h-20 border-2 rounded-md flex items-center justify-center border bg-gray-50 text-4xl cursor-pointer transition-transform transform active:scale-90 transition-colors duration-100 ease-in-out"></button>
+            <button class="box w-20 h-20 border-2 rounded-md flex items-center justify-center border bg-gray-50 text-4xl cursor-pointer transition-transform transform active:scale-90 transition-colors duration-100 ease-in-out"></button>
+        </div>
+        <button id="reset" class="border mb-2 rounded p-2 bg-blue-500 text-lg font-serif hover:bg-blue-700 font-semibold  w-fit">Reset</button>
+    </div>
+    <script src="TicTacToe.js"></script>
+    
+</body>
+</html>

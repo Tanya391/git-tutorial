@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.commandsToSkipShell": [
+        "\"emmet.showSuggestionsAsSnippets\": false, \"emmet.includeLanguages\": {}, \"editor.suggest.showSnippets\": false"
+    ]
+}
