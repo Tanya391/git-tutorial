@@ -1,1 +1,58 @@
-!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Rock Paper Scissors</title>
+</head>
+<body class="min-h-screen w-full flex items-center justify-center bg-[#bad7f2]">
+  <div class="bg-black border-2 shadow-lg flex flex-col rounded-lg p-6 space-y-6 items-center">
+    <h1 class="font-semibold text-2xl font-serif text-white text-center">Rock Paper Scissors</h1>
+
+    <!-- Choices -->
+    <div class="flex flex-row gap-4">
+      <!-- Rock -->
+      <div id="rock"
+        class="choice h-32 w-32 p-2 relative rounded-lg border-4 bg-white hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-transform duration-300 cursor-pointer">
+        <img src="rock.png" alt="Rock" class="w-full h-full object-contain -rotate-90" />
+        <p class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white text-sm rounded px-2 py-1">Rock</p>
+      </div>
+
+      <!-- Paper -->
+      <div id="paper"
+        class="choice h-32 w-32 p-2 relative rounded-lg border-4 bg-white hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-transform duration-300 cursor-pointer">
+        <img src="paper.png" alt="Paper" class="w-full h-full object-contain -rotate-90" />
+        <p class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white text-sm rounded px-2 py-1">Paper</p>
+      </div>
+
+      <!-- Scissor -->
+      <div id="scissor"
+        class="choice h-32 w-32 p-2 relative rounded-lg border-4 bg-white hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-transform duration-300 cursor-pointer">
+        <img src="scissor.jpg" alt="Scissor" class="w-full h-full object-contain -rotate-90" />
+        <p class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white text-sm rounded px-2 py-1">Scissor</p>
+      </div>
+    </div>
+
+    <!-- Score Section -->
+     <div class="flex flex-row gap-10 text-center">
+         <div class="flex flex-col items-center space-y-1">
+           <div id="user" class="rounded-lg w-10 h-10 text-black font-serif font-semibold text-4xl bg-white">0</div>
+           <p class="text-white font-serif font-semibold text-md">You</p>
+         </div>
+         <div class="flex flex-col items-center space-y-1">
+           <div id="computer" class="rounded-lg w-10 h-10 text-black font-serif font-semibold text-4xl bg-white">0</div>
+           <p class="text-white font-serif font-semibold text-md">Computer</p>
+         </div>
+
+     </div>
+
+    <!-- Reset Button -->
+    <div
+      class="w-[200px] text-white font-serif font-semibold text-md border-2 border-white p-2 rounded-lg hover:bg-[#b5e48c] hover:text-black transition-colors duration-300 text-center" id="msg">
+      Play Your Move
+    </div>
+  </div>
+  <script src="stonepaper.js"></script>
+</body>
+</html>
